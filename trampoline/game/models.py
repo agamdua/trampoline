@@ -1,6 +1,10 @@
 from django.db import models
-from user import User
 
+# Third party
+from mptt.models import MPTTModel, TreeForeignKey
+
+# Custom
+from user import User
 
 PLAYERS = (
     ('ai', 'Computer'),
@@ -12,10 +16,13 @@ MOVES = (
     ('O', 'O'),
 )
 
-class Game(models.Model):
+class Game(MPTTModel):
     player = models.CharField(max_length = 2,
                               choices = PLAYERS)
     player_move = models.CharField(max_length = 1,
                                    choices = MOVES)
-    winner = models.CharField(default=None,
-                              choices = PLAYERS)
+    previous_move = TreeForeignKey('self',
+                                    null=True,
+                                    blank=True,
+                                    related_name='children')
+    end = models.BooleanField(default=False)
