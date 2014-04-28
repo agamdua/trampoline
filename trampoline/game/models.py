@@ -4,7 +4,7 @@ from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
 
 # Custom
-from user import User
+from users.models import User
 
 PLAYERS = (
     ('ai', 'Computer'),
