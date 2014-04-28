@@ -2,6 +2,8 @@
 
 // bootstrap alert CSS, translated to the django-standard levels of
 // debug, info, success, warning, error
+
+
 .alert-debug {
   color: black;
   background-color: white;
@@ -30,4 +32,14 @@
   color: #b94a48;
   background-color: #f2dede;
   border-color: #eed3d7;
+}
+
+// enough css, store as variables
+
+.sol-bg {
+    background-color: #fdf6e3;
+  }
+
+.sol-accent {
+    color: #586E75;
 }
