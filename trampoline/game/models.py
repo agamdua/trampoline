@@ -21,7 +21,7 @@ class Game(MPTTModel):
                               choices = PLAYERS)
     player_move = models.CharField(max_length = 1,
                                    choices = MOVES)
-    previous_move = TreeForeignKey('self',
+    previous_state = TreeForeignKey('self',
                                     null=True,
                                     blank=True,
                                     related_name='children')
