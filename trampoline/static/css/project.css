@@ -33,12 +33,22 @@
   border-color: #eed3d7;
 }
 
-/* line 39, ../sass/project.scss */
-.sol-bg {
+/* line 44, ../sass/project.scss */
+.text-accent {
+  color: #586e75;
+}
+
+/* line 48, ../sass/project.scss */
+.nav-text-accent {
+  color: #268bd2;
+}
+
+/* line 52, ../sass/project.scss */
+.sol-light-bg {
   background-color: #fdf6e3;
 }
 
-/* line 43, ../sass/project.scss */
-.sol-accent {
-  color: #586E75;
+/* line 58, ../sass/project.scss */
+.board.grid {
+  border: 4px solid #586e75;
 }

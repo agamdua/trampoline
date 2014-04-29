@@ -31,12 +31,12 @@
 
   </head>
 
-  <body class="sol-bg">
+  <body class="sol-light-bg">
 
     <div class="header navbar">
       <div class="container">
-        <a class="navbar-brand" href="/">trampoline</a>
-        <ul class="nav navbar-nav">
+        <a class="navbar-brand nav-text-accent" href="/">trampoline</a>
+        <ul class="nav navbar-nav nav-text-accent">
           <li class="active"><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
 
@@ -60,7 +60,7 @@
       {% endif %}
 
       {% block content %}
-        <p class="sol-accent">Use this document as a way to quick start any new project.</p>
+        <p class="text-accent">Use this document as a way to quick start any new project.</p>
       {% endblock content %}
 
     </div> <!-- /container -->

@@ -34,12 +34,29 @@
   border-color: #eed3d7;
 }
 
-// enough css, store as variables
+// Solarized colors
+$sol-base3: #FDF6E3;
+$sol-base0: #586E75; 
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$red:       #dc322f;
 
-.sol-bg {
-    background-color: #fdf6e3;
+.text-accent {
+    color: $sol-base0;  
+}
+
+.nav-text-accent {
+    color: $blue;
+}
+
+.sol-light-bg {
+    background-color: $sol-base3;
   }
 
-.sol-accent {
-    color: #586E75;
+.board {
+
+  &.grid {
+    border: 4px solid $sol-base0;
+  }
+  
 }
