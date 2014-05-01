@@ -99,7 +99,7 @@ class Player(object):
     def over(self, opponent, possible_moves):
         return Game.won(self) or Game.won(opponent) or not possible_moves
 
-user = Player("User")
-ai = Player("AI")
-game = Game(user, ai)
-game.play()
+# user = Player("User")
+# ai = Player("AI")
+# game = Game(user, ai)
+# game.play()
