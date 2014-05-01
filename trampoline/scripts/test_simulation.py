@@ -1,6 +1,6 @@
 from simulate_game import Game, Player
 
-class TestPLayer(object):
+class TestSimulation(object):
     @classmethod
     def setup_class(self):
         self.user = Player("User")
