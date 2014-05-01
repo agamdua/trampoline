@@ -42,9 +42,6 @@ class Game(object):
         print 'over'
 
 
-
-
-
 class Player(object):
     def __init__(self, description):
         self.description = description
