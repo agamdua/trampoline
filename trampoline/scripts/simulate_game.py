@@ -42,9 +42,6 @@ class Game(object):
         print 'over'
 
 
-
-
-
 class Player(object):
     def __init__(self, description):
         self.description = description
@@ -99,7 +96,7 @@ class Player(object):
     def over(self, opponent, possible_moves):
         return Game.won(self) or Game.won(opponent) or not possible_moves
 
-user = Player("User")
-ai = Player("AI")
-game = Game(user, ai)
-game.play()
+# user = Player("User")
+# ai = Player("AI")
+# game = Game(user, ai)
+# game.play()
