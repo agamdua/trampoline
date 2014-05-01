@@ -5,11 +5,14 @@ class TestSimulation(object):
     def setup_class(self):
         self.user = Player("User")
         self.ai = Player("AI")
+        self.game = Game(self.user, self.ai)
 
-    def test_user_creation(self):
-        assert self.user.description == "User"
-        assert self.user.moves == []
-
-    def test_ai_creation(self):
-        assert self.ai.description == "AI"
-        assert self.ai.moves == []
+    def test_game_won(self):
+        self.user.moves = [0,1,2]
+        assert Game.won(self.user) == True
+        self.user.moves = [0,4,8]
+        assert Game.won(self.user) == True
+        self.user.moves = [1,5,8]
+        assert Game.won(self.user) == False
+        self.user.moves = [7,4,2]
+        assert Game.won(self.user) == False
